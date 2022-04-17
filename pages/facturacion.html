@@ -1,0 +1,90 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head class="ui-widget-header ui-corner-all">
+    <title>
+        Autenticación de Usuario
+    </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="ctl00_pageBody" class="ui-widget ui-widget-content ui-corner-all" bgcolor="#EEEECC">
+
+    <div id="cuerpo" align="center">
+        <div id="cabecera">
+            <div id="ctl00_logoEmpresa"
+                style="background-repeat:no-repeat;width:20%;float:left;height:60px;margin-left:10px;background-image:url(&#39;../Imagenes/logo_britanico.jpg&#39;);background-size:219px 79px;background-color:#F4F4F4;margin-right:20px;background-position:center;">
+            </div>
+            <div id="titulo">
+                <span id="ctl00_Label1">MODULO DE CONSULTA DE COMPROBANTES</span>
+            </div>
+            <div id="ctl00_logoCCL" class=""></div>
+        </div>
+        <div id="contenido">
+            <form name="aspnetForm" method="post" action="./frmAutenticacionUsuario.aspx" id="aspnetForm">
+                <div>
+                    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                        value="/wEPDwUJNjIwMDE5NzQ5D2QWAmYPZBYCAgMPFgIeB2JnY29sb3IFByNFRUVFQ0MWBgIBDxYCHgVzdHlsZQXmAWJhY2tncm91bmQtcmVwZWF0Om5vLXJlcGVhdDt3aWR0aDoyMCU7ZmxvYXQ6bGVmdDtoZWlnaHQ6NjBweDttYXJnaW4tbGVmdDoxMHB4O2JhY2tncm91bmQtaW1hZ2U6dXJsKCcuLi9JbWFnZW5lcy9sb2dvX2JyaXRhbmljby5qcGcnKTtiYWNrZ3JvdW5kLXNpemU6MjE5cHggNzlweDtiYWNrZ3JvdW5kLWNvbG9yOiNGNEY0RjQ7bWFyZ2luLXJpZ2h0OjIwcHg7YmFja2dyb3VuZC1wb3NpdGlvbjpjZW50ZXI7ZAIHDxYCHgdWaXNpYmxlaGQCCQ8WAh8CaGQYAQUhY3RsMDAkYm9keUNvbnRlbnRQbGFjZSRpbWdDYXB0Y2hhDwUkOGVkODJhNGEtMjFmZi00OGRkLWI3MzUtOTFjYmI5YTc1ZTI3ZIzac8m+k45N1eVSKeyeUotD3mj4xjnZZnj7+SU7uS0Q" />
+                </div>
+
+
+                <div>
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ED87B43D" />
+                    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                        value="/wEdAAUMneMPVKxJUJ0aJZk7zxxvikL6l5wJ7a62eNg9AMhWFroDteQ3mVAwmcQvEc/yOrU9ri7JrR8UbGdy/jZGfYpVfRVBi99bP1VgcrMUcTSpQWO7HMxJlPdkzrcge8WW8OG1XAVg4tfw8m9b4TP7CeNh" />
+                </div>
+
+
+
+
+                <div class="subTitulo">
+                    <span>Autenticacion por Usuario</span>
+                </div>
+                <div class="contenedor">
+                    <div class="contenedorCampos">
+                        <span id="ctl00_bodyContentPlace_Label1" class="columnaEtiqueta">Usuario:</span>
+                        <input name="ctl00$bodyContentPlace$txtUser" type="text" id="ctl00_bodyContentPlace_txtUser"
+                            class="columnaCampo" />
+                    </div>
+                    <div class="contenedorCampos">
+                        <span id="ctl00_bodyContentPlace_Label2" class="columnaEtiqueta">Clave:</span>
+                        <input name="ctl00$bodyContentPlace$txtPassword" type="password"
+                            id="ctl00_bodyContentPlace_txtPassword" class="columnaCampo" />
+                    </div>
+                    <div class="contenedorCampos">
+                        <span id="ctl00_bodyContentPlace_Label3" class="columnaEtiqueta">Texto Imagen:</span>
+                        <input name="ctl00$bodyContentPlace$txtCaptcha" type="text"
+                            id="ctl00_bodyContentPlace_txtCaptcha" class="columnaCampo" />
+                    </div>
+
+                    <div>
+                        <input type="submit" name="ctl00$bodyContentPlace$Button1" value="Ingresar"
+                            onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions)"
+                            id="ctl00_bodyContentPlace_Button1" class="botonForma botonFormaInterior" /><br />
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                    <div>
+                        <ul>
+                            <li class='last'><a href="contrasena.html"><span>Recuperar Contrasena</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

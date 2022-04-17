@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+    <div class="cnt-wrapper">
+        <div class="wrapper">
+            <header class="header">
+                <div class="wancho header-ctn">
+                    <a href=" " class="header-logo">
+                        <img src="../assets/img/coderkids.jpg" alt="" width="237" height="59"
+                            style="margin-bottom:10px;">
+                    </a>
+                </div>
+            </header>
+            <section class="b3 wrap-user">
+                <div class="wancho">
+                    <!--<div class="b16-content b16-wrapcursos">-->
+                    <div class="b3-cnt b16-wrapcursos">
+                        <h3 style="color:#01c9ca; font-size:20px; margin-bottom:10px;" class="md-h3-title">¿Olvidó su
+                            usuario?</h3>
+                        <p>Ingrese los datos solicitados para recordar su usuario.</p>
+                        <form method="post" class="b3-form md-box-form" id="userdata">
+
+                            <div class="g-form-input">
+                                <div class="g-cnt-input b16-form-item">
+                                    <span>Apellido Paterno:</span>
+                                    <div class="md-box-input">
+                                        <input class="validate[required] text-input" name="apellidoPaterno" type="text"
+                                            id="apellidoPaterno" maxlength="120">
+                                    </div>
+                                </div>
+                                <div class="g-cnt-input b16-form-item">
+                                    <span>Apellido Materno:</span>
+                                    <div class="md-box-input">
+                                        <input class="text-input" name="apellidoMaterno" type="text"
+                                            id="apellidoMaterno" maxlength="120">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="g-form-input">
+                                <div class="g-cnt-input b16-form-item">
+                                    <span>Nombres:</span>
+                                    <div class="md-box-input">
+                                        <input class="validate[required] text-input" name="nombres" type="text"
+                                            id="nombres">
+                                    </div>
+                                </div>
+                                <div class="g-cnt-input b16-form-item">
+                                    <span>Documento identidad:</span>
+                                    <div class="md-box-input">
+                                        <input class="validate[required, custom[onlyLetterNumber] text-input"
+                                            name="numdocumento" type="text" id="numdocumento" maxlength="15">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-btn">
+                                <!--      <a href="..\index.html" class="btn-back">Regresar al login</a>   <>-->
+
+                                <button class="g-btn h-45 white g-btn" id="btnBack">
+                                    <a href="..\index.html">Regresar al Login</a>
+                                </button>
+
+                                <button class="g-btn h-45 red g-btn" id="btnconsultausuario" type="submit">
+                                    <span>Buscar</span>
+                                    <i class="icon-arrow-pointing-to-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div id="boxresultado">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" style="margin-top: 1rem;">
+        <!--
+    <a href="#inicio" class="f-up scroll">
+    <span class="icon-arrow-up2"></span>subir
+    </a>
+    -->
+
+        <section class="footer-copy" style="min-height:50px;">
+            <div class="wancho">
+                <div class="">
+                    <p style="line-height:16px;">Según la Ley N° 29733 - Ley de Protección de Datos Personales - y
+                        su Reglamento, brindamos a nuestros alumnos/tutores un tratamiento seguro de los datos
+                        personales de los
+                        cuales es titular y que han sido consignados con la finalidad de poder brindarle adecuada y
+                        oportunamente nuestro servicio tanto en actividades internas como externas.</p>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Britanico Alumno Nuevo</title>
+</head>
+
+<body>
+    <div class="cnt-wrapper">
+        <div class="wrapper">
+            <section class="b3 wrap-user">
+                <div class="wancho">
+                    <input id='base_url' type='hidden' value='' />
+                    <div class="b3-cnt b16-wrapcursos">
+                        <div class="logotipo">
+                            <img src="../assets/img/coderkids.jpg" alt="" width="237" height="67">
+                        </div>
+
+                        <div class="nota-footer">
+                            <div class="lp-pom-box" id="lp-pom-box-417">
+                                <h5>Asociación Coder House Kids: </h5>
+                            </div>
+                            <div class="lp-pom-box-text">
+                                <p>Ingrese los datos solicitados en el formulario y forme parte de <b> la comunidad
+                                        CoderHouse Kids</b></p>
+                                <h6>Consideraciones: </h6>
+
+                                <p><i class="icon-arrow-right"></i> Servicio dirigido a alumnos nuevos que deseen
+                                    empezar a
+                                    estudiar desde el primer ciclo.</p>
+                                <p><i class="icon-arrow-right"></i> Le permitirá acceder a un Usuario y Contraseña, con
+                                    la
+                                    cual
+                                    podrá matricularse desde nuestra App Coder House Kids de manera fácil, cómoda y
+                                    segura.</p>
+
+                                <p><i class="icon-arrow-right"></i> Consignar en este formulario los datos del alumno
+                                    Coder House Kids
+                                    tal como figura en su Documento de Identidad, los que se considerarán exactos y
+                                    verdaderos.
+                                </p>
+                                <p><i class="icon-arrow-right"></i> Recuerde que el tener un Usuario y Contraseña no
+                                    implica
+                                    haberse matriculado.</p>
+                                <p><i class="icon-arrow-right"></i> El Usuario y Contraseña se genera por única vez y es
+                                    válido
+                                    para todas las matrículas que realice en el Coder House Kids.</p>
+                                <p><i class="icon-arrow-right"></i> Si usted ya cuenta con un Usuario y Contraseña, no
+                                    podrá
+                                    generar uno nuevo.</p>
+
+                                <p><i class="icon-arrow-right"></i> Luego de registrarse, si desea actualizar cualquier
+                                    dato
+                                    ingresado debe llenar el formulario ARCO haciendo clic
+                                    <a href="https://bit.ly/3bicS0Q">aquí.</a>
+                                </p>
+                                <p><i class="icon-arrow-right"></i> Asimismo, si tiene conocimientos previos de
+                                    codificación
+                                    puede
+                                    rendir un examen de clasificación. Para más información haga clic
+                                    <a href="https://www.google.com"> aquí.</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-content">
+
+                            <form method="POST" class="b3-form md-box-form" id="userdata"
+                                action="index.php?action=save&csrf=55f8e20249600a45de89965b8efa71e3" autocomplete="off">
+
+                                <input type="hidden" id="condicion_edad" name="condicion_edad">
+                                <input type="hidden" name="csrf" value="55f8e20249600a45de89965b8efa71e3">
+                                <input type="hidden" id="numcorrelativo" name="numcorrelativo" value="117644">
+                                <input type="hidden" id="acad_career" name="acad_career" value="CENT">
+
+                                <div id="mail-status"></div>
+
+                                <div class="frm-titulo">
+                                    <div class="fone">
+                                        <h3 style="color:#01c9ca; font-size:20px; margin-bottom:20px; display: block;"
+                                            class="md-h3-title">Ficha de datos</h3>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <!--Correlativo-->
+                                <div class="g-form-input h-100">
+                                    <div class="g-cnt-input b16-form-item w-mitad">
+                                        <span>Nro. Ficha:</span>
+                                        <div class="md-box-input box-min-left-one">
+                                            <input class="text-input format-upper" name="ficha" type="text" id="ficha"
+                                                maxlength="30" value="117644" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Nombres-->
+                                <div class="g-form-input h-100">
+                                    <div class="g-cnt-input b16-form-item w-mitad">
+                                        <span>Nombres:</span>
+                                        <div class="md-box-input box-min-left-one">
+                                            <input class="validate[required] text-input format-upper" name="nombres"
+                                                type="text" id="nombres" maxlength="30">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Apellidos-->
+                                <div class="g-form-input h-100">
+                                    <div class="g-cnt-input b16-form-item">
+                                        <span>Primer Apellido:</span>
+                                        <div class="md-box-input box-min-left">
+                                            <input class="validate[required] text-input format-upper"
+                                                name="apellidoPaterno" type="text" id="apellidoPaterno" maxlength="30">
+                                        </div>
+                                    </div>
+                                    <div class="g-cnt-input b16-form-item w-49">
+                                        <span>Segundo Apellido:</span>
+                                        <div class="md-box-input box-min">
+                                            <input class="text-input format-upper" name="apellidoMaterno" type="text"
+                                                id="apellidoMaterno" maxlength="30">
+                                        </div>
+                                    </div>
+
+                                    <!--Documento-->
+                                    <div class="g-form-input h-100">
+                                        <div class="g-cnt-input b16-form-item">
+                                            <span>Documento de Identidad:</span>
+                                            <div class="md-box-input box-min-left">
+                                                <select class="validate[required]" name="tipoDocumento"
+                                                    id="tipoDocumento">
+                                                    <option value="CEX">
+                                                        Carnet de Extranjería
+                                                    </option>
+                                                    <option value="DNI" selected>
+                                                        Documento Nacional de Identidad
+                                                    </option>
+                                                    <option value="PAS">
+                                                        Pasaporte
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="g-cnt-input b16-form-item w-49">
+                                            <span>Número de documento:</span>
+                                            <div class="md-box-input box-min">
+                                                <input class="validate[required, minSize[8]] text-input"
+                                                    name="numeroDocumentoDNI" type="text" id="numeroDocumentoDNI"
+                                                    maxlength="8">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Telefono-->
+                                    <div class="g-form-input h-100">
+
+                                        <div class="g-cnt-input b16-form-item">
+                                            <span>Número de teléfono:</span>
+                                            <div class="md-box-input box-min-left">
+                                                <input id="ccode" name="codeCountry" type="text" style="display: none">
+                                                <span id="ccodeString"></span>
+                                                <input id="telefono" class="validate[required]" name="telefono"
+                                                    type="tel">
+                                            </div>
+                                        </div>
+
+                                        <div class="g-cnt-input b16-form-item w-49">
+                                            <span>Correo electrónico:</span>
+                                            <div class="md-box-input box-min">
+                                                <input class="validate[required, custom[email]] text-input" name="email"
+                                                    type="text" id="email" maxlength="120">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="g-terminos" style="margin-top: 10px;">
+                                        <label for="acepto">
+                                            Doy consentimiento al BRITÁNICO para el tratamiento de mis datos personales
+                                            según los
+                                            alcances de la ley 29733, Ley de Protección de Datos Personales y su
+                                            Reglamento.
+                                        </label>
+                                        <span class="check">
+                                            <input class="validate[required] text-input" id="acepto" name="acepto"
+                                                type="checkbox">
+                                            <i class="icon-success"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="g-terminos" style="margin-top: 1px;">
+                                        <label for="publicidad">
+                                            Acepto recibir información de nuestros cursos y servicios.
+                                        </label>
+                                        <span class="check">
+                                            <input class="text-input" id="publicidad" name="publicidad" type="checkbox">
+                                            <i class="icon-success"></i>
+                                        </span>
+
+                                    </div>
+
+
+                                    <!--Action-->
+                                    <div class="box-btn">
+                                        <button class="g-btn h-45 red" id="btnsendatos" type="submit">
+                                            <span> Enviar </span>
+                                            <i class="icon-arrow-pointing-to-right"></i>
+                                        </button>
+                                    </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
