@@ -15,7 +15,7 @@
 @media only screen and (max-width: 2500px) {
   #panel-reglamento {
     display: block;
-    background-color: #034087;
+    background-color: #eb10e0;
     position: absolute;
     top: 0;
     z-index: 2000;
@@ -319,11 +319,16 @@ html {
 .btn-primary + .dropdown-menu:not(.head-list) > li > a.active,
 .open > .dropdown-toggle.btn-primary {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #e41822 !important;
   border-color: #e41822 !important;
 =======
   background-color: #35d40e !important;
   border-color: #35d40e !important;
+>>>>>>> mi-rama
+=======
+  background-color: #d40e99 !important;
+  border-color: #d40e99 !important;
 >>>>>>> mi-rama
   color: #fff !important;
 }
@@ -336,8 +341,8 @@ html {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #35d40e;
-  border-color: #35d40e;
+  background-color: #d40e99;
+  border-color: #d40e99;
 }
 
 .btn.focus,
