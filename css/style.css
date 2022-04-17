@@ -318,8 +318,8 @@ html {
 .btn-primary:not([class*="btn-active-"]) + .dropdown-menu > .active > a,
 .btn-primary + .dropdown-menu:not(.head-list) > li > a.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #1c3550 !important;
-  border-color: #1c3550 !important;
+  background-color: #35d40e !important;
+  border-color: #35d40e !important;
   color: #fff !important;
 }
 
@@ -331,8 +331,8 @@ html {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #35d40e;
+  border-color: #35d40e;
 }
 
 .btn.focus,
