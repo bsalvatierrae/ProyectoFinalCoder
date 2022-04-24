@@ -1,112 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Checkout example · Bootstrap v5.1</title>
 
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/checkout/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap core CSS -->
+    <!--link rel="stylesheet" href="../css/style.css"> -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .container {
+  max-width: 960px;
+}
+    </style>
 
-</head>
-
-<body>
-    <div class="cnt-wrapper">
-        <div class="wrapper">
-            <header class="header">
-                <div class="wancho header-ctn">
-                    <a href=" " class="header-logo">
-                        <img src="../assets/img/coderkids.jpg" alt="" width="237" height="59"
-                            style="margin-bottom:10px;">
-                    </a>
-                </div>
-            </header>
-            <section class="b3 wrap-user">
-                <div class="wancho">
-                    <!--<div class="b16-content b16-wrapcursos">-->
-                    <div class="b3-cnt b16-wrapcursos">
-                        <h3 style="color:#01c9ca; font-size:20px; margin-bottom:10px;" class="md-h3-title">¿Olvidó su
-                            usuario?</h3>
-                        <p>Ingrese los datos solicitados para recordar su usuario.</p>
-                        <form method="post" class="b3-form md-box-form" id="userdata">
-
-                            <div class="g-form-input">
-                                <div class="g-cnt-input b16-form-item">
-                                    <span>Apellido Paterno:</span>
-                                    <div class="md-box-input">
-                                        <input class="validate[required] text-input" name="apellidoPaterno" type="text"
-                                            id="apellidoPaterno" maxlength="120">
-                                    </div>
-                                </div>
-                                <div class="g-cnt-input b16-form-item">
-                                    <span>Apellido Materno:</span>
-                                    <div class="md-box-input">
-                                        <input class="text-input" name="apellidoMaterno" type="text"
-                                            id="apellidoMaterno" maxlength="120">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="g-form-input">
-                                <div class="g-cnt-input b16-form-item">
-                                    <span>Nombres:</span>
-                                    <div class="md-box-input">
-                                        <input class="validate[required] text-input" name="nombres" type="text"
-                                            id="nombres">
-                                    </div>
-                                </div>
-                                <div class="g-cnt-input b16-form-item">
-                                    <span>Documento identidad:</span>
-                                    <div class="md-box-input">
-                                        <input class="validate[required, custom[onlyLetterNumber] text-input"
-                                            name="numdocumento" type="text" id="numdocumento" maxlength="15">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box-btn">
-                                <!--      <a href="..\index.html" class="btn-back">Regresar al login</a>   <>-->
-
-                                <button class="g-btn h-45 white g-btn" id="btnBack">
-                                    <a href="..\login.html">Regresar al Login</a>
-                                </button>
-
-                                <button class="g-btn h-45 red g-btn" id="btnconsultausuario" type="submit">
-                                    <span>Buscar</span>
-                                    <i class="icon-arrow-pointing-to-right"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <div id="boxresultado">
-
-            </div>
+    <!-- Custom styles for this template -->
+    <link href="../css/form-validation.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img
+            class="d-block mx-auto mb-4"
+            src="../assets/img/coderkids.jpg"
+            alt=""
+            width="237"
+            height="67"
+          />
+          
+          <h3 style="color:#01c9ca; font-size:20px; margin-bottom:10px;" class="md-h3-title">¿Olvidó su
+            usuario?</h3>
+        <p>Ingrese los datos solicitados para recordar su usuario.</p>
         </div>
-    </div>
 
-    <footer class="footer" style="margin-top: 1rem;">
-        <!--
-    <a href="#inicio" class="f-up scroll">
-    <span class="icon-arrow-up2"></span>subir
-    </a>
-    -->
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
 
-        <section class="footer-copy" style="min-height:50px;">
-            <div class="wancho">
-                <div class="">
-                    <p style="line-height:16px;">Según la Ley N° 29733 - Ley de Protección de Datos Personales - y
-                        su Reglamento, brindamos a nuestros alumnos/tutores un tratamiento seguro de los datos
-                        personales de los
-                        cuales es titular y que han sido consignados con la finalidad de poder brindarle adecuada y
-                        oportunamente nuestro servicio tanto en actividades internas como externas.</p>
+
+          </div>
+          <div class="col-md-7 col-lg-8">
+               <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Apellido Paterno:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="nombres"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
                 </div>
-            </div>
-        </section>
 
-    </footer>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellido Materno:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="apellidos"
+                    value=""
+                    required
+                  />
+                  
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
 
-</body>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Nombres:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="apellidos"
+                      value=""
+                      required
+                    />
+                    
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
 
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Documento identidad:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="apellidos"
+                      value=""
+                      required
+                    />
+                    
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">
+                Buscar
+              </button>
+
+            <hr class="my-4" />
+            <small class="text-muted"
+              > <a href="..\index.html"><span>Regresar al login</span></a></small>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022--Actualidad CoderHouseKids</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Terminos</a></li>
+          <li class="list-inline-item"><a href="#">Apoyos</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="form-validation.js"></script>
+
+    
+  </body>
 </html>
