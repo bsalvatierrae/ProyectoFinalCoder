@@ -1822,20 +1822,13 @@ user agent stylesheet input[type="text" i] {
     /* width: 180px;*/
   }
 }
-<<<<<<< HEAD
 
-html,
-body {
-  height: 100%;
-=======
-}
 
 /*contraseñña*/
 html,
 body {
   height: 100%;
-  background: darkgoldenrod;
->>>>>>> mi-rama
+  
 }
 
 body {
@@ -1874,8 +1867,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
 
 
 /*index**/
@@ -1958,4 +1949,3 @@ body {
   text-decoration-line: none;
   cursor: pointer;
 }
->>>>>>> mi-rama
