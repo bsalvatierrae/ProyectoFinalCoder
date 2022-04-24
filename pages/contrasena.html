@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Signin Template · Bootstrap v5.1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/sign-in/"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Coder Hause Kids</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <!--  <link rel="stylesheet" href="../css/stylecontra.css">  Tab panes -->
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-<body>
-    <div id="container" class="cls-container">
-        <div id="bg-overlay"></div>
-        <div class="cls-content">
-            <div class="cls-content-sm panel">
-                <div class="panel-body">
-                    <div>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="formularioRecuperarContrasenia">
-                                <div class="mar-ver pad-btm">
-                                    <img height="" src="../assets/img/coderkids.jpg">
-                                    <br>
-                                    <h1 class="h3">Coder Hause Kids</h1>
-                                    <p>Si ha olvidado su contraseña, usted puede obtener una nueva por correo
-                                        electronico.</p>
-                                    <p>Introduzca su ID de usuario para localizar su correo y enviar el procedimiento a
-                                        seguir.</p>
-                                </div>
-                                <center>
-                                    <div class="form-group" style="padding: 0px 0px 10px 0px">
-                                        <input type="text" class="form-control" id="username"
-                                            placeholder="Ingrese su ID de usuario" value="" autofocus>
-                                </center>
-                                
-                            </div>
-                            <center>
-                            <button class="btn btn-primary btn-lg btn-block" onclick="getCorreo()">Continuar</button>
-                            <br>
-                        </center>
-                            <div class="text-center">
-                                <a href="..\login.html" class="btn-link mar-rgt">Regresar al login</a>
-                            </div>
-                        </div>
-                    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-                </div>
-            </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form>
+        <img
+          class="mb-4"
+          src="../assets/img/coderkids.jpg"
+          alt=""
+          width="300"
+          height="100"
+        />
+        <br />
+        <h1 class="h3">Coder Hause Kids</h1>
+        <p>
+          Si ha olvidado su contraseña, usted puede obtener una nueva por correo
+          electronico.
+        </p>
+        <p>
+          Introduzca su ID de usuario para localizar su correo y enviar el
+          procedimiento a seguir.
+        </p>
+
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Ingrese su ID de usuario"
+          />
+          <br />
         </div>
-    </div>
-    </div>
-</body>
-
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Continuar
+        </button>
+        <hr class="my-4" />
+        <small class="text-muted"
+          > <a href="..\login.html"><span>Regresar al login</span></a></small>
+      </form>
+    </main>
+  </body>
 </html>
